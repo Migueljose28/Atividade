@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetShop - Produtos para Gatos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background-image: url('gatos/gato.png');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SanPets</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="testeprincipal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teste.html">cachorro</a>
+        </li>
+	<li class="nav-item">
+          <a class="nav-link" href="testegato.html">gato</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            sobre
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="testesobre.html">Sobre nós</a></li>
+            <li><a class="dropdown-item" href="testecomponentes.html">Componentes</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Outros pets</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero text-center">
+  <h1>Bem-vindo ao Mundo dos Gatos!</h1>
+</div>
+
+<!-- Main Content -->
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <h2>Nossos Produtos</h2>
+    <p>Confira nossos produtos incríveis para cuidar e mimar seu gato!</p>
+  </div>
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="img-produtos/ImagemparaProdutos/2.png" class="card-img-top" alt="Ração Premium para Gatos">
+        <div class="card-body">
+          <h5 class="card-title">Ração Premium para Gatos - 2kg</h5>
+          <p class="card-text">Uma ração de alta qualidade, rica em nutrientes para garantir a saúde e energia do seu gato. Ideal para gatos de todas as idades.</p>
+          <p class="text-success fw-bold">R$ 89,90</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Comprar Agora
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="img-produtos/ImagemparaProdutos/10.png" class="card-img-top" alt="Arranhador Compacto">
+        <div class="card-body">
+          <h5 class="card-title">Arranhador Compacto</h5>
+          <p class="card-text">O arranhador perfeito para manter seu gato ativo e proteger seus móveis. Compacto e fácil de montar.</p>
+          <p class="text-success fw-bold">R$ 79,90</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Comprar Agora
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="img-produtos/ImagemparaProdutos/9.png" class="card-img-top" alt="Cama Confortável para Gatos">
+        <div class="card-body">
+          <h5 class="card-title">Cama Confortável para Gatos</h5>
+          <p class="card-text">Uma cama macia e aconchegante para garantir que seu gato tenha noites tranquilas e confortáveis.</p>
+          <p class="text-success fw-bold">R$ 99,90</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Comprar Agora
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Ops</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Não está disponivel no momento, estamos em manutenção
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 PetShop. Todos os direitos reservados.</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

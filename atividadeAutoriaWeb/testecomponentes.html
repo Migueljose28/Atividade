@@ -1,0 +1,129 @@
+<!-- Página para mostrar dois componentes de um grupo -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Time - PetShop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .team-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SanPets</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="testeprincipal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teste.html">cachorro</a>
+        </li>
+	<li class="nav-item">
+          <a class="nav-link" href="testegato.html">gato</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            sobre
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="testesobre.html">Sobre nós</a></li>
+            <li><a class="dropdown-item" href="testecomponentes.html">Componentes</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Outros pets</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <h2>Conheça Nosso Time</h2>
+  </div>
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-md-6">
+      <div class="card team-card">
+        <img src="https://cdn.suap.ifrn.edu.br/media/alunos/313645.D4IqIx0JhGRF.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=24I2DK2GsCsUIcxsjfkg%2F20241220%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20241220T191908Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c36258f7087c736b3f35e7802124a387c5742d96f6aef4efe7cec34909c6b68d" class="card-img-top" alt="Membro 1">
+        <div class="card-body text-center">
+          <h5 class="card-title">Miguel José</h5>
+          <p class="card-text">Estudante de autoria web do ifrn mossoró ministrado pelo professora catarina</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="col-md-6">
+      <div class="card team-card">
+        <img src="https://cdn.suap.ifrn.edu.br/media/alunos/294119.xLm7L4HXWVTy.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=24I2DK2GsCsUIcxsjfkg%2F20241220%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20241220T191908Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=55c981be8dd8bede0019d369d5b98a847c57b6223450246deabc35cea1e992b5" class="card-img-top" alt="Membro 2">
+        <div class="card-body text-center">
+          <h5 class="card-title">Kemylly</h5>
+          <p class="card-text">Estudante de autoria web do ifrn mossoró ministrado pelo professora catarina</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="btn-group" >
+  <button type="button"data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Canal do youtube</button>
+  <buttontype="button"data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">instagram</button>
+  <button type="button"data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">facebook</button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Ops</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Não está disponivel no momento, estamos em manutenção
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
